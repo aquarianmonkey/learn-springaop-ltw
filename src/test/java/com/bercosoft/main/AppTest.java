@@ -13,7 +13,6 @@ import com.bercosoft.model.Client;
 @ContextConfiguration(locations ={"applicationContext-Test.xml"})
 public class AppTest
 {
-	
 	//Client uut = new Client();  // LTW fails DI here
 	
 	@Test
@@ -21,9 +20,7 @@ public class AppTest
 	{
 		//Used local variable as work around for failed DI on fields with @Configurable
 		Client uut = new Client();
-		
 		assertNotNull("LTW failed to inject spring bean", uut.getGroot());
-		
 	}
 
 }
