@@ -113,29 +113,10 @@
 						<forkMode>once</forkMode>
 						<argLine>
 							-javaagent:${settings.localRepository}\org\springframework\spring-instrument\${spring.version}\spring-instrument-${spring.version}.jar
-							<!-- -javaagent:C:/Users/admin/.m2/repository/org/springframework/spring-instrument/4.1.0.RELEASE/spring-instrument-4.1.0.RELEASE.jar -->
 						</argLine>
 						<!-- <useSystemClassloader>true</useSystemClassloader> -->
 					</configuration>
 				</plugin>
-
-				<!-- <plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>aspectj-maven-plugin</artifactId>
-					<version>1.3</version>
-					<executions>
-						<execution>
-							<configuration>
-								<source>1.8</source>
-								<target>1.8</target>
-							</configuration>
-							<goals>
-								<goal>compile</goal>       use this goal to weave all your main classes
-								<goal>test-compile</goal>  use this goal to weave all your test classes
-							</goals>
-						</execution>
-					</executions>
-				</plugin> -->
 			</plugins>
 		</pluginManagement>
 	</build>
